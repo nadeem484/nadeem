@@ -1,10 +1,29 @@
+
+/******************************************************************************
+ *  Execution       :   1. default node         cmd> node 2darray.js 
+ *                      2. if nodemon installed cmd> node 2darray.js
+ * 
+ *  Purpose         : reading values in 2D arrays and printing them out
+ * 
+ *  @description    :
+ * 
+ *  @file           : 2darray.js
+ *  @overview       : it will take row size and column size as inputs, 
+ *                  : return the array in matrix format
+
+ *  @module         : 2darray.js - This is optional if expeclictly its an npm or local package
+ *  @author         : Nadeem Ahamad
+ *  @version        : 1.0
+ *  @since          : 30-08-2018
+ *
+ ******************************************************************************/
 var r1=require('readline');
 var utility=require('../utility/utility.js');
 var read=r1.createInterface(process.stdin,process.stdout);
 
 function array2d()
 {
-    read.question("eneter the no of rows->",function(row){
+    read.question("enter the no of rows->",function(row){
 
         read.question('enter the no of columns',function(cols){
 
@@ -15,52 +34,3 @@ function array2d()
     });
 }
 array2d();
-
-
-// // function newfunction(){
-// //     read.question("fill the array:", function(input){
-// //         read.question("fill the array:", function(input2){
-// //         utility.newfunction(input);
-// //         read.close();
-// //             });
-// //         });
-// // }
-// // newfunction();
-
-
-
-
-
-
-// var r1=require('readline');
-// var utility=require('..utility/utility.js');
-// var prompts=r1.createInterface({
-//     input:process.stdin,
-//     output:process.stdout
-// });
-// function array_2d()
-// {
-//     prompts.question("enter the no of rows->",function(row){
-
-//         prompts.question('enter the no of columns',function(cols){
-
-//             utility.arr_2d(  prompts,row,cols);
-//            // prompts.close();
-
-//         });
-//     });
-// }
-// array_2d();
-
-
-
-
-
-
-// // for(var i=1; i<=col; i++)
-// //             {
-// //                 for(var j=1; j<=rows; j++)
-// //                 {
-// //                     read.question("enter the value of rows:", function(input){
-// //                 }
-// //             }
